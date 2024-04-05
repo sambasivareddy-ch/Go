@@ -9,7 +9,7 @@ import "fmt"
 		arr []T => defines the array of any data 
 */
 func PrintArray[T any] (arr []T) {
-	for idx, value := range arr {
-		fmt.Println("Index: ", idx, " Value: ", value)
+	for _, value := range arr {
+		fmt.Println(value)
 	}
 }
